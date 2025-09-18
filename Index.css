@@ -1,0 +1,60 @@
+/* General Page Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cfe9ff; /* light blue */
+    color: #333;
+    text-align: center;
+}
+
+/* Main heading */
+h1 {
+    color: #1e3a8a; /* Fryers deep blue */
+    text-decoration: underline;
+    margin-top: 20px;
+    font-size: 3em;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #1e3a8a; /* Fryers deep blue */
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffcc00; /* Fryers accent (yellow) */
+    transform: scale(1.1);
+}
+
+/* Responsive Navbar */
+@media (max-width: 700px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+    
+    .navbar li {
+        margin: 10px 0;
+    }
+}

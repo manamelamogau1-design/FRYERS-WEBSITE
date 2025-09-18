@@ -1,0 +1,37 @@
+/* General Page Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #cfe9ff; /* Light Fryers Blue background */
+    color: #333;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #1e3a8a; /* Fryers deep blue */
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Paragraph styling */
+p {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff; /* stays white */
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-size: 16px;
+    text-align: justify;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Add hover effect for interactivity */
+p:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}

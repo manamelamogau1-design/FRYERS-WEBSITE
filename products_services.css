@@ -1,0 +1,61 @@
+/* General Page Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #cfe9ff; /* light blue background */
+    color: #333;
+}
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    color: #1e3a8a; /* Fryers deep blue */
+    text-decoration: underline;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+p {
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    background: #ffffff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Section headings */
+h2, h3 {
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Menu lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+}
+
+li {
+    background: #ffffff;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 6px;
+    border: 1px solid #1e3a8a;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    font-weight: bold;
+}
+
+/* Hover effect for menu items */
+li:hover {
+    background-color: #e0f0ff;
+    transform: translateY(-2px);
+    transition: 0.3s ease;
+}
