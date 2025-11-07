@@ -1,0 +1,176 @@
+/* General Page Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cfe9ff; /* light blue */
+    color: #333;
+    text-align: center;
+}
+
+/* Main heading */
+h1 {
+    color: #1e3a8a; /* Fryers deep blue */
+    text-decoration: underline;
+    margin-top: 20px;
+    font-size: 3em;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #1e3a8a; /* Fryers deep blue */
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffcc00; /* Fryers accent (yellow) */
+    transform: scale(1.1);
+}
+
+/* Responsive Navbar */
+@media (max-width: 700px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+    
+    .navbar li {
+        margin: 10px 0;
+    }
+}
+#currentDate {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+/* Search bar top-left */
+#searchContainer {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 999; /* Forces search bar to appear on top */
+}
+
+#searchBar {
+    padding: 6px 10px;
+    font-size: 14px;
+    width: 160px;
+    border-radius: 8px;
+    border: 1px solid #555;
+}
+
+#searchBtn {
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+/* Smooth scroll when clicking navigation links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Each section acts like a full-screen page */
+section {
+    height: 100vh;
+    padding-top: 140px; /* Prevent content from hiding behind navbar */
+}
+
+/* Optional: give each section a soft shadow (no colour change) */
+section {
+    border-bottom: 4px solid rgba(0, 0, 0, 0.1);
+}
+/* Fullscreen background image for HOME section */
+#home {
+    background-image: url("images/download.jpg"); /* Replace with your actual image name */
+    background-size: cover;       /* fills the screen */
+    background-position: center;  /* centers image */
+    background-repeat: no-repeat; /* no tiling */
+    height: 100vh;                /* full viewport height */
+    display: flex;                /* center content */
+    justify-content: center;
+    align-items: center;
+    color: white;                 /* ensures text is readable */
+}
+
+section {
+    padding-top: 5000px;
+    padding-bottom: 5000px;
+    min-height: 1000vh;  /* makes scrolling feel like pages */
+}
+/* -----------------------------
+   Strong section spacing (place at BOTTOM of Style.css)
+   ----------------------------- */
+
+/* Make sure sections behave like full blocks and include extra space */
+section {
+  display: block;
+  box-sizing: border-box;              /* include padding in height calculations */
+  padding-top: 1000px;                  /* space before content */
+  padding-bottom: 1000px;               /* space after content */
+  min-height: calc(100vh + 400px);     /* ensures visible extra space between sections */
+  transition: padding 0.3s ease;
+}
+
+/* If you prefer margins instead of padding (won't affect internal layout) */
+section + section {
+  margin-top: 1000px;                   /* additional gap between consecutive sections */
+}
+
+/* Prevent sticky navbar from overlapping section content when using anchor links */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 1000px;           /* set this to roughly the navbar height */
+}
+
+/* If you are using a sticky navbar with position: sticky or fixed,
+   make it explicit so browser respects its height */
+.navbar {
+  position: sticky;  /* or fixed if you used fixed previously */
+  top: 0;
+  z-index: 999;
+}
+
+/* Debug helper (temporary): show section boundaries so you can see spacing */
+section.debug-outline {
+  outline: 2px dashed rgba(0,0,0,0.12); /* remove when happy */
+}
+.toastMessage {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #1e3a8a;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    animation: fadeout 1.5s forwards;
+}
+
+@keyframes fadeout {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
